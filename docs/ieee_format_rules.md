@@ -69,5 +69,4 @@ This document outlines the official formatting standards followed by IEEE confer
 - Use high-quality figures (300 dpi preferred)
 - Use the official IEEE template as reference:
 https://www.ieee.org/conferences/publishing/templates.html
-```text
-[1] J. Smith, “An Overview of AI,” IEEE Transactions on Neural Networks, 2020.
+
