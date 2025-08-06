@@ -26,14 +26,14 @@
 
 ```
 Format-iQ/
-├── client/ # Frontend (React)
+├── frontend/ (React)
 │ ├── public/
 │ └── src/
 │ ├── assets/
 │ ├── components/
 │ ├── pages/
 │ └── App.jsx
-├── server/ # Backend (Python - FastAPI/Flask)
+├── backend/ (Python - FastAPI/Flask)
 │ ├── app/
 │ │ ├── routes/
 │ │ ├── services/
