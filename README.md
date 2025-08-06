@@ -22,6 +22,30 @@
 | AI & Scoring| Custom logic, GPT-based suggestions (later) |
 | Dev Tools   | GitHub, VS Code, Google Docs, Notion |
 
+## 📁 Project Structure
+
+```
+Format-iQ/
+├── client/ # Frontend (React)
+│ ├── public/
+│ └── src/
+│ ├── assets/
+│ ├── components/
+│ ├── pages/
+│ └── App.jsx
+├── server/ # Backend (Python - FastAPI/Flask)
+│ ├── app/
+│ │ ├── routes/
+│ │ ├── services/
+│ │ ├── utils/
+│ │ └── main.py
+├── docs/ # IEEE rules, format samples, notes
+├── LICENSE # Apache 2.0 License
+├── README.md # Project overview
+├── .gitignore
+└── requirements.txt / package.json
+```
+
 ## 📚 Reference Formats
 
 Currently supported:
@@ -30,8 +54,18 @@ Currently supported:
 ## 🤝 Contributing
 
 Contributions, ideas, and suggestions are welcome!
-Please open issues or submit pull requests with improvements.
+
+To contribute:
+1. Fork the repository
+2. Create a new branch
+3. Commit your changes
+4. Open a Pull Request (PR)
+
+Please refer to [`CONTRIBUTING.md`](CONTRIBUTING.md) for full guidelines.
 
 ## 📄 License
 
-MIT License © 2025 Jigisha Baliyann
+Licensed under the **Apache License, Version 2.0 (Apache-2.0)**  
+© 2025 Jigisha Baliyann
+
+See the [`LICENSE`](LICENSE) file for details.
