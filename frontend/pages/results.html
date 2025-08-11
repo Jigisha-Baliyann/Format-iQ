@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formatting Analysis Results - Format-iQ</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="logo.png" alt="FORMAT-IQ Logo">
+                <span>FORMAT-IQ</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="check.html">Check Paper</a></li>
+                <li><a href="blogs.html">Blogs</a></li>
+                <li><a href="faqs.html">FAQs</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li>
+                    <button class="theme-toggle" id="themeToggle">🌙</button>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Results Container -->
+    <main class="results-container">
+        <div class="results-header">
+            <h1>Formatting Analysis Results</h1>
+            <p class="results-subtext">Based on IEEE standards | Uploaded File: <strong class="uploaded-file">sample.pdf</strong></p>
+        </div>
+
+        <!-- Score Box -->
+        <div class="score-box">
+            <div class="score-circle">85</div>
+            <p>Your paper meets most IEEE formatting guidelines with minor improvements needed.</p>
+        </div>
+
+        <!-- Compliance Checklist -->
+        <div class="compliance-checklist">
+            <h2>Compliance Checklist</h2>
+            
+            <div class="checklist-item">
+                <span>✅</span>
+                <p><strong>Margins:</strong> Top, bottom, left, and right margins are correctly set to 1 inch.</p>
+            </div>
+
+            <div class="checklist-item">
+                <span>⚠</span>
+                <p><strong>Font Size:</strong> Body text is 12 pt, but should be 10 pt.</p>
+            </div>
+
+            <div class="checklist-item">
+                <span>✅</span>
+                <p><strong>Line Spacing:</strong> Main text has specified 1.0x line spacing.</p>
+            </div>
+
+            <div class="checklist-item">
+                <span>❌</span>
+                <p><strong>Headings:</strong> Section titles are not consistently in bold.</p>
+            </div>
+
+            <div class="checklist-item">
+                <span>✅</span>
+                <p><strong>Tables:</strong> Table titles are above the tables, as required.</p>
+            </div>
+
+            <div class="checklist-item">
+                <span>⚠</span>
+                <p><strong>Page Numbers:</strong> Page numbers are not centered at the bottom.</p>
+            </div>
+
+            <div class="checklist-item">
+                <span>❌</span>
+                <p><strong>Figures:</strong> Font size for figure captions should be reduced to 10 pt.</p>
+            </div>
+        </div>
+
+        <!-- Action Buttons -->
+        <div class="results-buttons">
+            <a href="check.html" class="btn-blue">Check Another Paper</a>
+            <a href="#" class="btn-green">Download Report</a>
+            <a href="blogs.html" class="btn-grey">Read Related Blogs</a>
+            <a href="contact.html" class="btn-orange">Submit Feedback</a>
+        </div>
+    </main>
+
+    <script src="../js/theme.js"></script>
+    <script src="../js/results.js"></script>
+
+</body>
+</html>
