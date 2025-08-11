@@ -3,62 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Check Paper - FORMAT-IQ</title>
+    <title>Check Paper | Format-iQ</title>
     <link rel="stylesheet" href="../css/style.css">
-    <script defer src="check.js"></script>
 </head>
 <body>
     <!-- Navbar -->
-    <nav class="navbar">
-        <div class="logo">
-            <img src="logo.png" alt="FORMAT-IQ Logo">
-            <span>FORMAT-IQ</span>
-        </div>
-        <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="check.html" class="active">Check Paper</a></li>
-            <li><a href="blogs.html">Blogs</a></li>
-            <li><a href="faqs.html">FAQs</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li>
-                <button class="theme-toggle" id="themeToggle">🌙</button>
-            </li>
-        </ul>
-    </nav>
+    <header>
+        <nav class="navbar">
+            <a href="../index.html" class="logo">Format-iQ</a>
+            <ul class="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="check.html" class="active">Check Paper</a></li>
+                <li><a href="faqs.html">FAQs</a></li>
+                <li><a href="blogs.html">Blogs</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <button id="theme-toggle">🌙</button>
+        </nav>
+    </header>
 
-    <!-- Main Section -->
-    <main class="check-section">
-        <h1>Check Paper</h1>
+    <!-- Main Content -->
+    <main class="check-page">
+        <h1>Check Your Paper</h1>
+        <p>Select a standard and upload your file to check formatting compliance.</p>
 
-        <label for="standardSelect">Select Standard</label>
+        <!-- Select standard -->
+        <label for="standardSelect">Choose Standard:</label>
         <select id="standardSelect">
             <option value="ieee">IEEE</option>
+            <option value="acm">ACM</option>
             <option value="springer">Springer</option>
-            <option value="elsevier">Elsevier</option>
         </select>
 
-        <div class="upload-section">
-            <p>Upload Research Paper</p>
-
-            <div class="upload-options">
-                <button class="google-drive-btn">
-                    <img src="gdrive.png" alt="Google Drive Icon">
-                    Choose from Google Drive
-                </button>
-                <p>or</p>
-                <label class="file-upload-label">
-                    <input type="file" id="fileInput" accept=".pdf,.docx">
-                    <span>Upload a file</span>
-                </label>
-            </div>
+        <!-- Upload -->
+        <div class="upload-container">
+            <label class="file-upload-label">
+                <input type="file" id="fileInput" accept=".pdf,.docx">
+                <span>Upload a file</span>
+            </label>
         </div>
 
+        <!-- Check Button -->
         <button id="checkPaperBtn" class="primary-btn">Check Paper Now</button>
     </main>
 
     <!-- Footer -->
-    <footer>© 2025 Format-iQ. All rights reserved.</footer>
+    <footer>
+        <p>© 2025 Format-iQ. All rights reserved.</p>
+    </footer>
+
+    <!-- Scripts -->
     <script src="../js/theme.js"></script>
+    <script src="../js/check.js"></script>
 </body>
 </html>
