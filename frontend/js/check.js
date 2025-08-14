@@ -1,6 +1,8 @@
 document.addEventListener("DOMContentLoaded", function () {
     const fileInput = document.getElementById("fileInput");
+    const fileLabel = document.getElementById("fileLabel");
     const checkButton = document.getElementById("checkPaperBtn");
+    const standardSelect = document.getElementById("standardSelect");
     let selectedFile = null;
 
     // Loader Element
@@ -41,10 +43,18 @@ document.addEventListener("DOMContentLoaded", function () {
     `;
     document.head.appendChild(style);
 
-    // File selection
+    // File selection → update label text
     fileInput.addEventListener("change", function () {
         selectedFile = fileInput.files[0];
+        if (selectedFile) {
+            fileLabel.textContent = `Selected: ${selectedFile.name}`;
+        } else {
+            fileLabel.textContent = "📂 Upload a file";
+        }
     });
+
+    // Label click → trigger file selection
+    fileLabel.addEventListener("click", () => fileInput.click());
 
     // Button click
     checkButton.addEventListener("click", function () {
@@ -56,6 +66,7 @@ document.addEventListener("DOMContentLoaded", function () {
         // Save data to localStorage for results page
         localStorage.setItem("uploadedFileName", selectedFile.name);
         localStorage.setItem("analysisScore", "85");
+        localStorage.setItem("selectedStandard", standardSelect.value);
 
         // Show loader
         loader.style.display = "block";
