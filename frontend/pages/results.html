@@ -33,13 +33,16 @@
     <main class="results-container">
         <div class="results-header">
             <h1>Formatting Analysis Results</h1>
-            <p class="results-subtext">Based on IEEE standards | Uploaded File: <strong class="uploaded-file">sample.pdf</strong></p>
+            <p class="results-subtext">
+                Based on <strong id="selectedStandardDisplay">N/A</strong> standards | Uploaded File: 
+                <strong id="fileName">No file found</strong>
+            </p>
         </div>
 
         <!-- Score Box -->
         <div class="score-box">
-            <div class="score-circle">85</div>
-            <p>Your paper meets most IEEE formatting guidelines with minor improvements needed.</p>
+            <div class="score-circle" id="score">N/A</div>
+            <p>Your paper meets most <strong id="selectedStandardDisplayScore">N/A</strong> formatting guidelines with minor improvements needed.</p>
         </div>
 
         <!-- Compliance Checklist -->
