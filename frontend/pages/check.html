@@ -1,29 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Check Paper | Format-iQ</title>
     <link rel="stylesheet" href="../css/style.css">
 </head>
+
 <body>
     <!-- Navbar -->
     <header>
         <nav>
-        <div class="logo">
-            <img src="../assets/logo.png" alt="logo" width="24"> FORMAT-IQ
-        </div>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="check.html">Check Paper</a></li>
-            <li><a href="blogs.html">Blogs</a></li>
-            <li><a href="faqs.html">FAQs</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li>
-                <button class="theme-toggle" id="themeToggle">🌙</button>
-            </li>
-        </ul>
+            <div class="logo">
+                <img src="../assets/logo.png" alt="logo" width="24"> FORMAT-IQ
+            </div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="check.html">Check Paper</a></li>
+                <li><a href="blogs.html">Blogs</a></li>
+                <li><a href="faqs.html">FAQs</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li>
+                    <button class="theme-toggle" id="themeToggle">🌙</button>
+                </li>
+            </ul>
         </nav>
     </header>
 
@@ -43,7 +45,14 @@
         <!-- Upload -->
         <div class="upload-container">
             <label class="file-upload-label">
-                <input type="file" id="fileInput" accept=".pdf,.docx">
+                <!-- <input type="file" id="fileInput" accept=".pdf,.docx"> -->
+                <div class="file-upload">
+                    <input type="file" id="fileInput" name="file" accept=".pdf,.docx" hidden>
+                    <label for="fileInput" id="fileLabel" class="upload-label">
+                        📂 Select PDF/DOCX
+                    </label>
+                </div>
+
                 <span>Upload a file</span>
             </label>
         </div>
@@ -61,4 +70,5 @@
     <script src="../js/theme.js"></script>
     <script src="../js/check.js"></script>
 </body>
+
 </html>
