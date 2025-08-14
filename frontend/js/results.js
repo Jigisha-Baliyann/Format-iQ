@@ -1,16 +1,37 @@
 document.addEventListener("DOMContentLoaded", function () {
     const fileName = localStorage.getItem("uploadedFileName");
     const score = localStorage.getItem("analysisScore");
+    const selectedStandard = localStorage.getItem("selectedStandard");
 
-    if (fileName) {
-        document.getElementById("fileName").textContent = fileName;
+    // ===== File name in header =====
+    const fileNameElem = document.getElementById("fileName");
+    if (fileName && fileName.trim() !== "") {
+        fileNameElem.textContent = fileName;
     } else {
-        document.getElementById("fileName").textContent = "No file found";
+        fileNameElem.textContent = "No file found";
     }
 
-    if (score) {
-        document.getElementById("score").textContent = score + "%";
+    // ===== Score circle =====
+    const scoreElem = document.getElementById("score");
+    if (score && score.trim() !== "") {
+        scoreElem.textContent = score + "%";
     } else {
-        document.getElementById("score").textContent = "N/A";
+        scoreElem.textContent = "N/A";
+    }
+
+    // ===== Selected standard in header & score description =====
+    const standardElemHeader = document.getElementById("selectedStandardDisplay");
+    const standardElemScoreText = document.getElementById("selectedStandardDisplayScore");
+
+    let standardToShow = "N/A";
+    if (selectedStandard && selectedStandard.trim() !== "") {
+        standardToShow = selectedStandard.toUpperCase();
+    }
+
+    if (standardElemHeader) {
+        standardElemHeader.textContent = standardToShow;
+    }
+    if (standardElemScoreText) {
+        standardElemScoreText.textContent = standardToShow;
     }
 });
